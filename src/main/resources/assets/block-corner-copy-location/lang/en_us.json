@@ -1,0 +1,7 @@
+{
+  "key.block-corner-copy-location.copy-location": "Copy Location",
+  "category.block-corner-copy-location": "Block Corner Copy Location",
+  "block-corner-copy-location.error.not-looking-at-block": "You are not looking at a block.",
+  "block-corner-copy-location.error.no-corners-found": "Could not find any corners for this block.",
+  "block-corner-copy-location.success": "Copied block corner location to clipboard (%s %s %s)"
+}

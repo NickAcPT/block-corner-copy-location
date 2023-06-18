@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "block-corner-copy-location",
+	"version": "${version}",
+	"name": "Block Corner Copy Location",
+	"description": "A mod that allows you to copy the location of a block corner",
+	"authors": [
+		"NickAcPT"
+	],
+	"contact": {
+		"homepage": "https://nickac.dev/",
+		"sources": "https://github.com/NickAcPT/block-corner-copy-location"
+	},
+	"license": "MIT",
+	"icon": "assets/block-corner-copy-location/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "io.github.nickacpt.blockcornercopylocation.BlockCornerCopyLocation",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.8.22"
+	}
+}
