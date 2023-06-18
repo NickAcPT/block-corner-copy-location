@@ -63,7 +63,7 @@ object BlockCornerCopyLocation : ModInitializer {
     }
 }
 
-fun Double.roundToNearestHalf(): String = String.format("%.2f", round(this * 2) / 2).trimEnd('0', '.')
+fun Double.roundToNearestHalf(): String = String.format("%.2f", round(this * 2) / 2).removeSuffix(".00").replace(".50", ".5")
 
 operator fun Box.component1() = minX
 operator fun Box.component2() = minY
