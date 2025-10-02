@@ -9,6 +9,7 @@ import net.minecraft.client.network.ClientPlayerEntity
 import net.minecraft.client.option.KeyBinding
 import net.minecraft.client.util.InputUtil
 import net.minecraft.text.Text
+import net.minecraft.util.Identifier
 import net.minecraft.util.hit.BlockHitResult
 import net.minecraft.util.hit.HitResult
 import net.minecraft.util.math.Box
@@ -46,10 +47,16 @@ object BlockCornerCopyLocation : ModInitializer {
     }
 
     override fun onInitialize() {
+
         val copyLocationKey = KeyBindingHelper.registerKeyBinding(
                 KeyBinding(
                         "key.block-corner-copy-location.copy-location",
-                        InputUtil.Type.KEYSYM, InputUtil.GLFW_KEY_X, "category.block-corner-copy-location"
+                        InputUtil.Type.KEYSYM, InputUtil.GLFW_KEY_X, KeyBinding.Category(
+                        Identifier.of(
+                            "block-corner-copy-location",
+                            "category"
+                        )
+                    )
                 )
         )
 
