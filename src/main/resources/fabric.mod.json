@@ -3,7 +3,7 @@
 	"id": "block-corner-copy-location",
 	"version": "${version}",
 	"name": "Block Corner Copy Location",
-	"description": "A mod that allows you to copy the location of a block corner",
+	"description": "Copy the nearest corner of the targeted block's rendered model without grid snapping, with eight small stationary redstone-dust particles marking the copied corner.",
 	"authors": [
 		"NickAcPT"
 	],
@@ -15,7 +15,7 @@
 	"icon": "assets/block-corner-copy-location/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			{
 				"value": "io.github.nickacpt.blockcornercopylocation.BlockCornerCopyLocation",
 				"adapter": "kotlin"
@@ -23,10 +23,10 @@
 		]
 	},
 	"depends": {
-		"fabricloader": ">=0.17",
-		"minecraft": "~1.21.9",
-		"java": ">=22",
-		"fabric-api": "*",
-		"fabric-language-kotlin": ">=1.13.6"
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": ">=0.163.0",
+		"fabric-language-kotlin": ">=1.14.2+kotlin.2.4.21"
 	}
 }
